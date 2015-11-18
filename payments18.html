@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="/favicon.ico">
+		<title>Интернет-телевидение ITV.BY – интерактивный контент: новости, спорт, прямые трансляции, футбол, реалити-шоу, тв-каналы, авторские программы, спецпроекты, музыка, игры, афиша.</title>
+
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/owl.carousel.css" rel="stylesheet">
+		<link href="/css/owl.theme.css" rel="stylesheet">
+		<link href="/css/common2.css" rel="stylesheet">
+		<link href="/css/myBootStrap.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="/js/html5shiv.min.js"></script>
+			<script type="text/javascript" src="/js/respond.min.js"></script>
+
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+            <script type="text/javascript"
+                    src="http://jquery-joshbush.googlecode.com/files/jquery.maskedinput-1.2.2.min.js"></script>
+		<![endif]-->
+
+
+
+
+
+	</head>
+	<body class="bodyPayments">
+
+
+    <!-- разделение на разряды -->
+    <script>
+
+    </script>
+
+		<!-- Modal SEND MAIL-->
+		<div class="modal fade bs-modal-sm modal-send" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog" style="margin-top: 15%;width: 420px;height: 385px;">
+				<div class="modal-content my-modal-window" style="height:385px;">	
+			        <div class="modal-body" style="padding:10px 10px 5px 20px">
+				        <div class="tab-pane fade active in" id="signin">
+					        <button class="modal-close" data-dismiss="modal" style="position:absolute; right:10px; z-index:100;"></button>
+				            <div class="row"> 
+					            <div class="col-md-4 col-xs-4" style="padding-right: 0px;"> 
+					            	<img src="images/logo_modal.png">
+					            </div>
+					            <div class="col-md-8 col-xs-8 modal_header_text" style="margin-top: 10px; margin-left: -10px;"> 
+									Внимание! Услуга платная. <br/>
+									Выезд возможен ТОЛЬКО в <br/>
+									г. Минске и Минском р-не	
+
+					            </div>	
+				            </div>					           
+				        	<form class="form-horizontal" method="post" name="model-forma" action="#tv_prist">
+					            <fieldset style="margin-top: 35px;">
+						        	<div class="control-group" style="margin-bottom: 3px;">
+						        		<div class="row">
+											<div class="col-md-5 col-xs-5" style="text-align:left;padding-left: 30px; padding-right: 0px;">
+												 <label class="control-label modal_label_text" for="contact-name" >Имя:</label>
+											</div>			
+					                       
+					                        <div class="col-md-7 col-xs-7" style="padding-right: 0px;padding-left: 30px;">
+					                            <input id="Modal_Name" name="Modal_Name" type="text" class="form-control my-form-control" placeholder="Имя" class="input-medium modal_imput_text" style="margin-top: 7px;">
+					                        </div>
+										</div>
+				                    </div>
+				                    <div class="control-group" style="margin-bottom: 3px;">
+				                    	<div class="row">
+				                    		<div class="col-md-5 col-xs-5" style="text-align:left;padding-left: 30px; padding-right: 0px;">
+						                    	<label class="control-label modal_label_text" for="contact-tel">№ телефона:</label>
+						                    </div>							                  
+								            <div class="col-md-7 col-xs-7" style="padding-right: 0px;padding-left: 30px;">
+								                <input id="Modal_tel" name="Modal_tel" type="text" class="form-control my-form-control" placeholder="+375-29-1234567" class="input-medium modal_imput_text" style="margin-top: 7px;">
+								            </div>	
+								        </div>  					
+				  					</div>
+				  					<div class="control-group" style="margin-bottom: 5px;">		
+				  						<div class="row">
+				  							<div class="col-md-6 col-xs-6" style="text-align:left;padding-left: 30px; padding-right: 0px;">
+							                	<label class="control-label modal_label_text" for="userid" style="text-align:left; padding-right: 0px;">Тип подключения:</label>
+							                </div>							               
+											<div class="col-md-6 col-xs-6" style="margin-left:-5px; padding:0;">
+									            <select class="selectpicker my-form-control modal_select_text" id="Modal_type" name="Modal_type" style="margin-top: 7px;">
+									                <option>------------------------</option>												
+													<option>&nbsp Проводное</option>
+													<option>&nbsp Беспроводное (wi-fi)</option>
+												</select>
+									        </div>	
+
+									    </div>
+				  					</div>
+				  					<div class="col-md-12 col-xs-12 modal_small_text" style="margin-top:20px; margin-bottom:10px; z-index:100;">
+				  						Необходимые условия для вызова специалиста: <br/>
+										доступ в интернет и подписка на пакет <a href="#">«iTV MEDIA»</a>
+				  					</div>
+				  					<div class="col-md-12 col-xs-12 modal_error_text_ok" style="height:20px;">
+				  							
+				  					</div>
+				  					<!-- Button -->						            
+									<div class="controls">
+										<button id="Modal_OK" class="modal_button">Отправить заявку</button>
+									</div>							
+				  				</fieldset>
+				            </form>
+		  				</div>
+	  				</div>	
+		    	</div>
+			</div>
+		</div>
+		<!-- END Modal SEND MAIL-->
+		<!-- Modal LIKE-->
+		<div class="modal fade bs-modal-sm modal-like" id="Modal_Like" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog" style="margin-top: 5%;width: 875px;height: 750px;">
+				<div class="modal-content my-modal-like">	
+			        <div class="modal-body" style="padding:10px;">	
+			        	<button class="modal-close" data-dismiss="modal"></button>			      			       
+				        <div class="row" style="margin-top:16px;"> 
+					        <div class="" style="margin:0 auto; width:775px; height:148px; border: 2px solid #00749b;"> 
+				            	<div class="modal_like_textB" style="height:45px; background-color:#00749b; padding-top:2px;">
+				            		Медиаплатформа ITV.BY	
+				            	</div>
+				            	<div class="vertical-align" style="height:99px; background: linear-gradient(to top, #323232, #000);">
+				            		<div class="col-md-8 col-xs-8 modal_like_textS">
+				            			<p>100 телевизионных каналов</p>
+				            			<p>1000 сериалов</p>
+				            			<p>Музыка и многое другое!</p>
+				            		</div>				            		
+				            		<div class="col-md-4 col-xs-4" style="margin:0 auto;">
+				            			<button id="Login_REG_like" class="modal-button-register" onclick="ShowModalWindowRegister()" data-target=".modal-register" data-toggle="modal" type="submit" style="position:absolute;margin-top: -20px;margin-left: 10px; right: 30px;">Регистрация</button>
+				            		</div>
+				            	</div>
+				            </div>					            
+			            </div>	
+			        	<div class="row"> 
+			        		<script src="http://new.itv.by/js/swfobject.js" type="text/javascript"></script>
+							<script type="text/javascript">
+								var flashvars = {
+									serverURL:"http://new.itv.by",
+									subrubricID:9,
+									videoID:24  };
+									var params = {
+										menu: "false",
+										wmode:"opaque",
+										scale: "noScale",
+										allowFullscreen: "true",
+										allowScriptAccess: "always",
+										bgcolor: "#FFFFFF"
+									};
+									var attributes = {
+										id:"ITVPlayer"
+									};
+									swfobject.embedSWF("http://new.itv.by/ITVPlayer.swf", "altContent", "996", "767", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
+							</script>
+							<div class="player-b" id="player-b" style="z-index: 100;">
+								<div>
+									<object type="application/x-shockwave-flash" id="ITVPlayer" data="http://new.itv.by/ITVPlayer.swf" width="850px" height="550px">
+										<param name="menu" value="false">
+										<param name="wmode" value="opaque">
+										<param name="scale" value="noScale">
+										<param name="allowFullscreen" value="true">
+										<param name="allowScriptAccess" value="always">
+										<param name="bgcolor" value="#FFFFFF">
+										<param name="flashvars" value="serverURL=http://new.itv.by&amp;subrubricID=9&amp;videoID=24">
+									</object>
+								</div>
+							</div>  
+			            </div>
+	  				</div>	
+		    	</div>
+			</div>
+		</div>
+		<!-- END Modal LIKE-->
+		<!-- Modal -->
+		
+		<!-- NEW Modal -->
+<div class="modal fade bs-modal-sm modal-message" id="myModal_message" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	<div class="modal-dialog" style="margin-top: 15%;width: 425px;height: 350px;">
+		<div class="modal-content my-modal-login">
+		        <div class="modal-body" style="padding:10px 10px 5px 20px">
+			        <div class="tab-pane fade active in" id="signin">
+				        <button class="modal-close" data-dismiss="modal" style="position:absolute; right:10px; z-index:100;"></button>
+			            <div class="row">
+				            <div class="col-md-4 col-xs-4" style="padding-right: 0px;">
+				            	<img src="images/logo_modal.png">
+				            </div>
+				            
+			            </div>
+			        	<div class="col-md-12 col-xs-12 modal_header_text" style="letter-spacing:-0.02em; margin:60px 0px 20px -10px;">		            	
+				            Внимание! <br/>
+				            Тарифы действительны до 1 марта 2015г.            				            	 
+				        </div>
+				        <button class="modal_button_reg btn_submit disabled" data-dismiss="modal">ОК</button>
+	  				</div>
+  				</div>
+	    	</div>
+		</div>
+	</div>
+		<!-- END-->
+
+
+		<div class="header-wrapper">
+			 <div class="row">
+                <div class="col-md-3">
+                    <!--
+                    <div class="headerHelp"></div>
+                    <div class="headerText">Помощь</div>
+                    
+                    <div class="headerText">Помощь</div>
+                    -->
+                    <a href="http://itv.by"><div class="headerHome"></div></a>
+                </div>
+                <div class="col-md-6">
+                     <a href="http://itv.by"><div class="headerLogo"></div></a>
+                </div>
+             
+                <div class="col-md-3">
+                	<div style="float:right; margin-top:3px;"> 
+                		<div class="headerName" style="display:none;">
+                			<a href="http://new.itv.by/cabinet_profile"></a>
+                		</div>	
+	                    <a href=""><div class="headerLogOut" style="display:none;"></div></a>
+						<button id="Login-call" type="submit" class="headerLogIn" style="display:none;" onclick="ShowModalWindowLogin()" data-toggle="modal" data-target=".modal-login"></button>                   
+					</div>
+  
+<!--                    
+                    <div class="headerSearch">
+                        <form><input type="text" placeholder=" Поиск"><button type="submit"></button></form>
+                    </div>
+-->
+                
+            </div>
+		</div>
+		<div class="wrapper main-menu">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="menuHome">Для дома</div>
+				</div>
+				<div class="col-md-6">
+					<div class="menuOffice active">Для офиса</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper sub-menu">
+			<div class="row">
+				<div class="col-md-3" id="link1">
+					<div class="sub-menu-cell active">
+						Тарифы
+						<div></div>
+					</div>
+				</div>
+				<div class="col-md-3" id="link2">
+					<div class="sub-menu-cell">
+						Список ТВ-каналов
+						<div></div>
+					</div>
+				</div>
+				<div class="col-md-3" id="link3">
+					<div class="sub-menu-cell">
+						Хочу ТВ-приставку
+						<div></div>
+					</div>
+				</div>
+				<div class="col-md-3" id="link4">
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="wrapper">
+			<div class="row paymentPrices" id="content1">
+
+				<input type="text">
+				<input type="text">
+				<input type="text">
+				<input type="text">
+			</div>
+
+			<div class="row channel" id="content2" style="display:none;">
+				<div class="textMiddleDevice">Категории</div>
+				<div class="row how_add">						
+					
+						<div class="LinkGenre active col-xs-2" style="width:32px;" id="g_all">
+							Все
+						</div>	
+						<div class="LinkGenre col-xs-2" style="width:150px;" id="g_info">
+							Информационные
+						</div>
+						<div class="LinkGenre col-xs-2" style="width:115px;" id="g_muz">
+							Музыкальные
+						</div>
+						<div class="LinkGenre col-xs-2" style="width:145px;" id="g_razvl">
+							Развлекательные
+						</div>
+						<div class="LinkGenre col-xs-2" style="width:167px;" id="g_nauk">
+							Научно-популярные
+						</div>
+						<div class="LinkGenre col-xs-2" style="width:105px;" id="g_bel">
+							Белорусские
+						</div>
+						<div class="LinkGenre col-xs-2" style="width:80px;" id="g_deti">
+							Для детей
+						</div>
+						<div class="LinkGenre col-xs-2" style="width:40px;" id="g_kino">
+							Кино
+						</div>
+						<div class="LinkGenre col-xs-2" style="width:105px;" id="g_sport">
+							Спортивные
+						</div>
+					<!--
+						<div class="LinkGenre col-xs-2" style="width:90px;" id="g_hd">
+							HD-каналы
+						</div>
+						-->
+				</div>					
+				<div id="owl-premiera-wrapper" class="owl-carousel owl-theme slide_channel" style="opacity: 1; display: block; margin-top: 15px;">
+					<div class="how_add_button" style="height: 400px;">
+						<div class="carousel slide" id="product-carousel" style="padding-left:60px; padding-right:60px; height:372px;">
+							<div class="carousel-inner" style="height: 480px;">	
+							</div>	
+							<!--
+								<div class="channel_text"> 
+									** каналы не идут при просмотре на ТВ-приставке
+								</div>
+							-->
+						</div>
+						<div class="owl-controls clickable">
+							<a href="#product-carousel" class="owl-prev carousel-control left" data-slide="prev">
+								<div class="owl-buttons">	
+									<div class="owl-prev" style="margin-top: 180px">							
+									</div>
+								</div>
+							</a>
+	    					<a href="#product-carousel" class="owl-next carousel-control right" data-slide="next">
+	    						<div class="owl-buttons">	
+									<div class="owl-next" style="margin-top: 180px">							
+									</div>
+								</div>    						
+	    					</a>
+						</div>	
+					</div>
+					<div class="ButtonCheck_CH"> 
+						<!--
+						<div class="col-md-5">
+						</div>
+	-->	
+					<div class="col-md-12 center-block">
+						<div class="col-md-3 col-md-offset-3 col-xs-offset-4" style="float: left; margin-bottom: 20px;">
+	                    	<div class="btn-size">  
+	                        	<button type="submit" class="btn btn-default btn-setup col-md-12 col-xs-12" style="margin:0px;" data-toggle="modal" data-target=".modal-like">
+	                            	Оценить качество	                            	
+	                        	</button>
+	                    	</div>
+	                    </div>
+	                    <div class="col-md-4">	                    	
+	                    	<div class="btn-size">
+	                        	<button type="submit" class="btn btn-default btn-setup col-md-12 col-xs-12" style="margin:0px;" onclick="location.href='http://main.itv.by/search_channel.html'">
+	                            	Хотите больше каналов?
+	                        	</button>
+	                    	</div>
+	                	</div>
+					</div>
+						
+	                	
+					</div>
+				</div>
+			</div>	
+			<div class="row" id="content3" style="display:none;">
+				<div class="textMiddleDevice">Как получить ТВ-приставку</div>
+					<div class="col-md-9"> 
+						<div class="row" style="padding: 0 10px 0 10px">
+							<div id="map1" style="height:400px"></div>
+						</div>
+						<div class="row map_text" style="padding: 0 10px 0 10px">
+							<br/>
+							ТВ-приставку можно получить у нас в офисе. <br/>
+							Адрес офиса: г. Минск, ул. Толбухина,2, 3 этаж, офис 323 (БЦ «TIME»).<br/>
+							<br/>
+
+							Для получения ТВ-приставки в офисе, необходимо при себе иметь:<br/>
+							<img src="/images/ellipse.png">
+							 2 подписанных экземпляра договора оказания услуг<br/>
+							<img src="/images/ellipse.png">
+							2 подписанных экземпляра догоовра безвозмездного пользования ТВ-приставкой<br/>
+							<img src="/images/ellipse.png">
+							 доверенность на получение материальных ценностей<br/>
+
+							<br/>
+						</div>
+					</div>
+					<div class="col-md-3"> 
+
+						<div class="map_text_stend border_blue row" style="margin-top:20px; padding-bottom:10px; display:none;">
+							<div style="padding:10px 10px 0 10px;"> 
+								Если в ващем городе нет стенда ITV, Вы можете оформить услугу "Получить ТВ-приставку по почте":
+							</div>	
+							<div style="margin:10px;">                                
+                                <button type="submit" class="btn btn-setup col-md-12 col-xs-12 button-text" style="margin:0px;" onclick="location.href='#'">
+                                    ДОСТАВКА ТВ-ПРИСТАВКИ
+                                </button>                               
+                            </div> 
+						</div>
+<!--
+						<div class="map_text_stend border_blue row" style="margin-top:20px; padding-bottom:10px;"> 
+							<div style="padding:10px 10px 0 10px;"> 
+								Если вам необходима помощь в подключении ТВ-приставки, вы можете оформить заявку.
+							</div>
+							<div style="margin:10px;">
+								<button type="submit" class="btn btn-default btn-setup col-md-12 col-xs-12 button-text" style="margin:0px;" data-toggle="modal" data-target=".modal-send">
+                                    Вызвать специалиста
+                                </button>                              
+                            </div>                           
+						</div>
+-->
+					</div>
+					<div class="col-md-12" style="height: 55px;">
+					</div>
+			</div>
+			<div class="row" id="content4" style="display:none;">
+				<div class="row col-md-4" style="margin-top:100px;">
+					<button type="submit" class="btn btn-default btn-setup col-md-12 col-xs-12 button-text" style="margin:0px;" data-toggle="modal" data-target=".modal-register">
+	                    Регистрация
+	                </button>
+	            </div>
+	            <div class="row col-md-4" style="margin-top:100px;">
+					<button id="Login-call"type="submit" class="btn btn-default btn-setup col-md-12 col-xs-12 button-text" style="margin:0px;" data-toggle="modal" data-target=".modal-login">
+	                    LOGIN
+	                </button>
+	            </div>
+			</div>
+			<!-- Modal -->
+
+
+		</div>		
+		<div class="wrapper">
+			<div class="col-md-12 descript" style="
+			    color: #bdbdbd;
+			    margin-top: 30px;
+			    text-align: left;
+			    padding-top: 0px;
+			    padding-left: 20px;
+			">
+                <p class="NDS" style="font-weight: bold; font-size: larger">*без НДС на основании главы 34 НК РБ</p>
+				<br>
+				<p class="infoAboutTV">
+					Для получения ТВ-приставки в офисе, необходимо при себе иметь:
+
+
+					<br>
+
+				<img src="/images/ellipse.png">&nbsp; 2 подписанных экземпляра договова оказания услуг</br>
+				<img src="/images/ellipse.png">&nbsp; 2 подписанных экземпляра договова безвозмездного пользования ТВ-приставкой</br>
+					<img src="/images/ellipse.png">&nbsp; доверенность на получение материальных ценностей</br>
+
+					
+
+
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="paymentsDocs">
+						<div class="paymentsContract">
+							<a href="http://new.itv.by/Agreement.doc">Публичный договор</a>
+						</div>
+						<div class="paymentsArchive">
+							<a href="http://new.itv.by/archive.rar">Архив публичных договоров</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<a target="_top" href="http://www.akavita.by/">
+                <script language="javascript"><!--
+                    d=document;w=window;n=navigator;d.cookie="cc=1";
+                    r=''+escape(d.referrer);js=10;c=(d.cookie)?1:0;j=0;
+                    x=Math.random();u=''+escape(w.location.href);lt=0;
+                    h=history.length;t=new Date;f=(self!=top)?1:0;cd=0;
+                    tz=t.getTimezoneOffset();cpu=n.cpuClass;ww=wh=ss=0;
+            //--></script>
+                <script language="javascript1.1"><!--
+                    js=11;j=(n.javaEnabled()?1:0);
+            //--></script>
+                <script language="javascript1.2"><!--
+                    js=12;lt=1;s=screen;ss=s.width;
+                    cd=(s.colorDepth?s.colorDepth:s.pixelDepth);
+            //--></script>
+                <script language="javascript1.3"><!--
+                    js=13;wh=w.innerHeight;ww=w.innerWidth;
+                    wh=(wh?wh:d.documentElement.offsetHeight);
+                    ww=(ww?ww:d.documentElement.offsetWidth);
+            //--></script>
+                <script language="javascript"><!--
+                    q='lik?id=22901&d='+u+'&r='+r+'&h='+h+'&f='+f;
+                    q+='&c='+c+'&tz='+tz+'&cpu='+cpu+'&js='+js+'&wh='+wh;
+                    q+='&ww='+ww+'&ss='+ss+'&cd='+cd+'&j='+j+'&x='+x;
+                    d.write('<img src="http://adlik.akavita.com/bin/'+
+                    q+'" alt="Akavita: каталог, рейтинг, счетчик для сайтов Беларуси" '+'border=0 width=1 height=1>');
+                    if(lt){d.write('<'+'!-- ');}
+            //--></script>
+                <img src="http://adlik.akavita.com/bin/lik?id=22901&amp;d=http%3A//itv.by/&amp;r=&amp;h=9&amp;f=0&amp;c=1&amp;tz=-120&amp;cpu=undefined&amp;js=13&amp;wh=554&amp;ww=1745&amp;ss=1920&amp;cd=24&amp;j=1&amp;x=0.007106827804818749" alt="Akavita: каталог, рейтинг, счетчик для сайтов Беларуси" border="0" width="1" height="1" style="display: none !important;">
+                <!-- <noscript>
+                    <img src="http://adlik.akavita.com/bin/lik?id=22901" border=0 height=10 width=10 alt="Akavita: каталог, рейтинг, счетчик для сайтов Беларуси">
+                </noscript>
+                <script language="JavaScript"><!--
+                    if(lt){d.write('--'+'>');}//-->
+            </a>
+            <script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-58464077-1', 'auto');
+			  ga('send', 'pageview');
+
+			</script>
+
+		<div class="footer-wrapper">
+			<footer>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="pull-left">
+						<div style="float: left; line-height: 41px; vertical-align: middle;">
+							&copy; 2007
+							<script>
+								new Date().getFullYear()>2010&&document.write("- "+new Date().getFullYear());
+							</script>
+						</div>
+						<div class="icon-erip">
+                            <img src="images/erip02.png" onmouseover="this.src='images/erip01.png'; border='0'" onmouseout="this.src='images/erip02.png';" alt="" border="0">
+                        </div>
+                        <div class="icon-erip">
+                            <img src="images/ipay02.png" onmouseover="this.src='images/ipay01.png'; border='0'" onmouseout="this.src='images/ipay02.png';" alt="" border="0">
+                        </div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div align="center">
+						<a href="http://new.itv.by/text_info_about">О проекте</a>
+						<a href="http://new.itv.by/text_info_promo">Smart-акция</a>
+						<a href="http://new.itv.by/text_info_stb">Хочу ТВ-приставку</a>
+						<a href="http://new.itv.by/text_info_api">Приложения</a>
+						<a href="http://new.itv.by/text_info_faq">Техподдержка</a>
+					</div>			
+				</div>
+				<div class="col-md-3">
+
+					<div class="pull-right">
+						<a href="http://facebook.com/itv.by" style="padding:0;"><div class="icon-f activ"></div></a>
+						<a href="http://vkontakte.ru/itv_by" style="padding:0;"><div class="icon-b"></div></a>
+						<a href="http://www.odnoklassniki.ru/group/52459875336436" style="padding:0;"><div class="icon-o"></div></a>
+						<a href="http://twitter.com/#!/ITV_BY" style="padding:0;"><div class="icon-t"></div></a>
+					</div>
+
+				</div>
+			</div>
+			</footer>
+		</div>
+		<!-- /.container -->
+		<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/modal.window.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+		<script type="text/javascript" src="/js/is.mobile.js"></script>
+		<script type="text/javascript" src="/js/sonic.js"></script>
+		<script type="text/javascript" src="/js/itv2Legal.js"></script>
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+		<script type="text/javascript">
+		    $('.menuOffice').click( function() {
+               $(this).toggleClass("active");
+               $('#link1').click();              
+			   return false;                		
+        	});
+        	/*
+        	$('.menuOffice').click( function() { 
+            	location.href="/payments2.html";
+				return false;                		
+        	});
+			*/
+			ymaps.ready(init1);
+			function init1 () {
+				var myMap;
+			   	var myMap = new ymaps.Map("map1", {
+		            center: [53.9061,27.5549],
+		            zoom: 11,
+		            controls: ['smallMapDefaultSet']
+		        }),
+
+
+
+/*
+		        //ProStore
+		        myPlacemark1 = new ymaps.Placemark([53.8355,27.6059], {		                       
+		            balloonContentBody: "<img src='/images/itv_map_logo.png'><b>&nbsp Стенд ITV</b> <br/>Гипермаркет «Простор»,<br/>г. Минск, ул. Уборевича, 176. <br/>"		            	           
+		        },{		         
+					    iconLayout: 'default#image',		           
+					    iconImageHref: '/images/map_point.png',		           
+					    iconImageSize: [39, 45],		            
+					    iconImageOffset: [-15, -45]
+			    });
+		        myMap.geoObjects.add(myPlacemark1);
+*/
+		        //GLOBO
+		        myPlacemark2 = new ymaps.Placemark([53.926054,27.61467], {
+		            balloonContentBody: "<img src='/images/itv_map_logo.png'><b>&nbsp Офис ITV</b> <br/>г. Минск, ул. Толбухина, дом 2, <br> 3-й этаж, офис 323 (БЦ «TIME») <br/>Тел: +375 (17) 336 55 20<br>"
+
+		        },{		         
+					    iconLayout: 'default#image',		           
+					    iconImageHref: '/images/map_point.png',		           
+					    iconImageSize: [39, 45],		            
+					    iconImageOffset: [-15, -45]
+			    });
+		        myMap.geoObjects.add(myPlacemark2);	
+
+/*
+
+		        //Vitebsk
+		        myPlacemark3 = new ymaps.Placemark([55.1736,30.2034], {		                       
+		            balloonContentBody: "<img src='/images/itv_map_logo.png'><b>&nbsp Стенд ITV</b> <br/>Магазин «Электросила»,<br/>г. Витебск, пр. Строителей, 4 <br/>Время работы: вт-ср; пт-вс, 12.00 - 20.00. "		            	           
+		        },{		         
+					    iconLayout: 'default#image',		           
+					    iconImageHref: '/images/map_point.png',		           
+					    iconImageSize: [39, 45],		            
+					    iconImageOffset: [-15, -45]
+			    });
+		        myMap.geoObjects.add(myPlacemark3);	
+
+*/
+		        //Grodno
+		        myPlacemark4 = new ymaps.Placemark([53.6780,23.8329], {		                       
+		            balloonContentBody: "<img src='/images/itv_map_logo.png'><b>&nbsp Стенд ITV</b> <br/>Магазин «Серпантин»,<br/>г. Гродно, ул. К.Маркса, 6"		            	           
+		        },{		         
+					    iconLayout: 'default#image',		           
+					    iconImageHref: '/images/map_point.png',		           
+					    iconImageSize: [39, 45],		            
+					    iconImageOffset: [-15, -45]
+			    });
+		        myMap.geoObjects.add(myPlacemark4);	
+
+ 
+		        //Mogilev
+		        myPlacemark5 = new ymaps.Placemark([53.9093,30.3045], {		                       
+		            balloonContentBody: "<img src='/images/itv_map_logo.png'><b>&nbsp Стенд ITV</b> <br/>Магазин «Электросила» в ТЦ «АРМАДА»,<br/>г. Могилев, ул. Строителей, 33 <br/>"		            	           
+		        },{		         
+					    iconLayout: 'default#image',		           
+					    iconImageHref: '/images/map_point.png',		           
+					    iconImageSize: [39, 45],		            
+					    iconImageOffset: [-15, -45]
+			    });
+		        myMap.geoObjects.add(myPlacemark5);	
+			};
+
+
+        $(function(){
+			itvSIte.run('payments');
+		});
+
+		/*$(function(){
+			itvSIte.run('index');
+		});*/
+		function mouseenter(element){					
+			var col=($(element).css("color"));				
+			$(element).css("background-color",col);
+			$(element).css("color","black");							
+		};
+
+		function mouseleave(element){			
+			var col=($(element).css("background-color"));			
+			$(element).css("background-color","black");
+			$(element).css("color",col);			
+		};
+		
+		function CheckButtonClick(element) {
+			itvSIte.CheckButtonClickIn(element.id); 		
+    	}  
+    	/*window.onload = function(){
+                $('#content1').show(); 
+                $('#content2').hide(); 
+                $('#content3').hide(); 
+                $('#content4').hide();                 
+        }  */    		
+
+        var ALL_CHANNELS = [
+				  {name: "Беларусь 1", img: "BT1.png", genre: "g_bel"}, 
+				  {name: "Беларусь 2", img: "BT2.png", genre: "g_bel"}, 
+				  {name: "Беларусь 3", img: "BT3.png", genre: "g_bel"}, 
+				  {name: "Беларусь 5", img: "BT5.png", genre: "g_bel"}, 
+				/*  {name: "ОНТ", img: "ONT.png", genre: "g_bel"}, */
+				  {name: "НТВ-Беларусь", img: "NTV.png", genre: "g_bel"}, 
+				  {name: "РТР-Беларусь", img: "RTR.png", genre: "g_bel"}, 
+				  {name: "СТВ", img: "STV.png", genre: "g_bel"}, 
+				  {name: "МИР", img: "MIR.png", genre: "g_bel"}, 
+
+				  {name: "Euronews", img: "EURONEWS.png", genre: "g_info"}, 
+				  {name: "РБК", img: "RBK.png", genre: "g_info"}, 				  
+				  {name: "ТРО Союза", img: "TRO.png", genre: "g_info"},
+				  {name: "RTVi", img: "RTVI.png", genre: "g_info"}, 
+
+				  {name: "Перец", img: "PEREC.png", genre: "g_razvl"}, 
+				  {name: "ТВ-3 Россия", img: "TV3.png", genre: "g_razvl"}, 
+				  {name: "ВТВ", img: "VTV.png", genre: "g_razvl"}, 
+				  {name: "Мужской", img: "MUZH.png", genre: "g_razvl"}, 
+/*				  {name: "Драйв", img: "DRAIV.png", genre: "g_razvl"}, */
+				  {name: "STV", img: "STV_1.png", genre: "g_razvl"}, 
+/*				  {name: "Ретро", img: "RETRO.png", genre: "g_razvl"}, */
+				  {name: "Точка ТВ", img: "TOCHKA_TV.png", genre: "g_razvl"}, 
+/*				  {name: "Живи", img: "ZHIVI.png", genre: "g_razvl"}, */
+                  {name: "2 X 2", img: "2_2.png", genre: "g_razvl"},
+					{name:"ТНТ International", img: "tnt-int.png", genre: "g_razvl"},
+
+/*				  {name: "RUSSIA TODAY HD", img: "RT_HD.png", genre: "g_hd"}, */
+/*				  {name: "HD Outdoor Channel", img: "OUTDOOR.png", genre: "g_hd"}, */
+/*				  {name: "Охотник и рыболов HD", img: "OHOTNIK_HD.png", genre: "g_hd"}, */
+
+/*				  {name: "Сетанта Спорт", img: "SETANTA.png", genre: "g_sport"}, */
+/*				  {name: "КХЛ", img: "KHL.png", genre: "g_sport"}, */
+				  {name: "Боец", img: "BOETS.png", genre: "g_sport"}, 
+				  {name: "Русский Экстрим", img: "EXTREME.png", genre: "g_sport"}, 
+				  {name: "Наш футбол", img: "NASH_FHOOTBALL.png", genre: "g_sport"}, 
+
+                  {name: "Nickelodeon", img: "NICK.png", genre: "g_deti"}, 
+                  {name: "JimJam", img: "JIM_JAM.png", genre: "g_deti"}, 
+/*                  {name: "Карусель", img: "KARUSEL.png", genre: "g_deti"}, */
+                  {name: "Мультимания", img: "MUL.png", genre: "g_deti"}, 
+                  {name: "Улыбка ребенка", img: "UR.png", genre: "g_deti"}, 
+                  {name: "Детский", img: "detskiy-telekanal-logo.jpg", genre: "g_deti"}, 
+
+                  {name: "VIASAT History", img: "VIA_H.png", genre: "g_nauk"}, 
+                  {name: "VIASAT Explorer", img: "VIA_E.png", genre: "g_nauk"}, 
+                  {name: "VIASAT Nature", img: "VIA_N.png", genre: "g_nauk"}, 
+/*                  {name: "24 Техно", img: "24T.png", genre: "g_nauk"}, */
+                  {name: "365 дней ТВ", img: "365_DAYS.png", genre: "g_nauk"}, 
+                  {name: "Авто Плюс", img: "AVTO_PLUS.png", genre: "g_nauk"}, 
+/*                  {name: "Усадьба", img: "USADBA.png", genre: "g_nauk"}, */
+                  {name: "Охота и рыбалка", img: "OHOTA_I_RIBA.png", genre: "g_nauk"}, 
+/*                  {name: "Вопросы и ответы", img: "VOPROS_OTVET.png", genre: "g_nauk"}, */
+                  {name: "Психология 21", img: "PSIHO_21.png", genre: "g_nauk"}, 
+/*                  {name: "Здоровое ТВ", img: "ZDOROVOE_TV.png", genre: "g_nauk"}, */
+/*                  {name: "Домашние животные", img: "HOME_ANIMAL.png", genre: "g_nauk"}, */
+                  {name: "Эгоист ТВ", img: "EGOIST.png", genre: "g_nauk"}, 
+/*                  {name: "Моя планета", img: "MPLANETA.png", genre: "g_nauk"}, */
+                  {name: "Кто есть Кто", img: "KEK.png", genre: "g_nauk"}, 
+         //         {name: "Совершенно секретно", img: "SS.png", genre: "g_nauk"},
+
+                  {name: "Кинохит", img: "KINO_HIT.png", genre: "g_kino"}, 
+/*                  {name: "Кинолюкс", img: "KINO_LUKS.png", genre: "g_kino"}, */
+                  {name: "Премьера", img: "PREMIERA.png", genre: "g_kino"}, 
+                  {name: "ТВ XXI", img: "TV_21.png", genre: "g_kino"}, 
+                  {name: "Иллюзион+", img: "ILLUSION_PLUS.png", genre: "g_kino"}, 
+                  {name: "Paramount comedy", img: "PARAMOUNT_COMEDY.png", genre: "g_kino"}, 
+                  {name: "Комедия ТВ", img: "KOMEDIA_TV.png", genre: "g_kino"},
+               //   {name: "НСТ (Страшное)", img: "NST.png", genre: "g_kino"},
+                  {name: "Индия ТВ", img: "INDIA_TV.png", genre: "g_kino"}, 
+                  {name: "Много ТВ", img: "MNOGO_TV.png", genre: "g_kino"}, 
+
+                  {name: "RU.TV", img: "RUTV.png", genre: "g_muz"}, 
+                  {name: "EuropaPlusTV", img: "EPP.png", genre: "g_muz"}, 
+                  {name: "Шансон ТВ", img: "SHANSON_TV.png", genre: "g_muz"}, 
+                  {name: "MTV Hits", img: "MTV_HITS.png", genre: "g_muz"}, 
+                  {name: "MTV ROCKS", img: "MTV_ROCKS.png", genre: "g_muz"},
+                  {name: "RUSSIAN MUSICBOX", img: "MUSIC_BOX.png", genre: "g_muz"}, 
+                  {name: "VH1 Classic", img: "VH-1.png", genre: "g_muz"}                  
+				];  	
+		var ALL_CHANNELSR = [];                         
+
+    		$('#link1').click( function() { 
+                $('.active').removeClass("active");  
+                $('#content1').show(); 
+                $('#content2').hide(); 
+                $('#content3').hide(); 
+                $('#content4').hide();                
+                $(this).find('.sub-menu-cell').toggleClass("active");  
+                $('.menuOffice').toggleClass("active");
+                $('.paymentsDocs').show();   
+                $('.descript').show();   
+			    return false;                		
+        	});
+        	$(window).resize(function(){        		
+        		var how_add=parseInt($('.how_add').css('height'));
+				if (how_add==44){
+					$('.carousel-inner').css('height', function(index) {
+						return (how_add+480);
+					});
+	        		$('.how_add_button').css('height', function(index) {
+						return (how_add+360);
+					});
+					$('.carousel-indicators').css('bottom', function(index) {
+						return (-160);
+					});
+				}
+				if (how_add==84){
+					$('.carousel-inner').css('height', function(index) {
+						return (how_add+560);
+					});
+	        		$('.how_add_button').css('height', function(index) {
+						return (how_add+480);
+					});
+					$('.carousel-indicators').css('bottom', function(index) {
+						return (-how_add-230);
+					});
+				}
+				if (how_add==126){
+					$('.carousel-inner').css('height', function(index) {
+						return (how_add+520);
+					});
+	        		$('.how_add_button').css('height', function(index) {
+						return (how_add+420);
+					});
+					$('.carousel-indicators').css('bottom', function(index) {
+						return (-how_add-190);
+					});
+				}  
+        	});
+            $('#link2').click( function() { 
+                $('.active').removeClass("active");                            
+                $('#content1').hide(); 
+                $('#content2').show(); 
+                $('#content3').hide(); 
+                $('#content4').hide();               
+                $(this).find('.sub-menu-cell').toggleClass("active");
+                $('.menuOffice').toggleClass("active");
+ 				$('.paymentsDocs').hide(); 
+ 				$('.descript').hide(); 
+ 				$('#g_all').toggleClass("active"); 	
+
+ 				//$('#g_all').toggleClass("active");
+	            //clear_channel();
+	            //remove_active_genre();
+	            create_channel("all");
+        		
+                return false; 
+            });
+            $('#link3').click( function() {  
+                $('.active').removeClass("active");                          
+                $('#content1').hide(); 
+                $('#content2').hide(); 
+                $('#content3').show(); 
+                $('#content4').hide();                
+                $(this).find('.sub-menu-cell').toggleClass("active");  
+                $('.menuOffice').toggleClass("active");
+ 				$('.paymentsDocs').hide();
+ 				$('.descript').hide();  
+                return false;                        
+            });  
+/*
+            $('#link4').click( function() {  
+                $('.active').removeClass("active");                           
+                $('#content1').hide(); 
+                $('#content2').hide(); 
+                $('#content3').hide(); 
+                $('#content4').show();                 
+                $(this).find('.sub-menu-cell').toggleClass("active"); 
+                $('.menuHome').toggleClass("active");
+ 				$('.paymentsDocs').hide(); 
+                return false;                        
+            }); 
+*/
+            function remove_active_genre(){
+            	$('.LinkGenre').removeClass("active");
+            }
+            function clear_channel(){            	
+            	$('.item').remove();               
+				for (var i = 1; i <= l_all; i++){ 		            	
+	            	$('.carousel-indicators li:eq('+i+')').css("opacity", "" );
+	            	$('.carousel-indicators li:eq('+i+')').removeClass("active");	            	
+	            }	            
+            }
+            function create_channel(genre){               
+            	for (var prop in ALL_CHANNELS) {
+					var ALL_CHANNELS_LENGHT_R=prop;                     					     
+				}  
+                ALL_CHANNELS_LENGHT_R++;
+                window.l_all=Math.ceil(ALL_CHANNELS_LENGHT_R/24);
+               
+            	if (genre=="all")
+            	{	
+					ALL_CHANNELSR=ALL_CHANNELS;
+					clear_channel();					
+				}else{
+					var ALL_CHANNELSR=[];
+                    var h=0;
+					for (var i = 0; i < ALL_CHANNELS_LENGHT_R; i++){ 	
+						if (ALL_CHANNELS[i].genre==genre){	
+							ALL_CHANNELSR[h] = {name: ALL_CHANNELS[i].name, img: ALL_CHANNELS[i].img, genre: ALL_CHANNELS[i].genre};								
+                            h=h+1;                           				    	
+						}					   
+					}  
+					for (var prop in ALL_CHANNELSR) {                         
+						 var ALL_CHANNELS_LENGHT_R=prop; 						 
+					}
+                    ALL_CHANNELS_LENGHT_R++;
+				}   						   		
+            	var l=Math.ceil(ALL_CHANNELS_LENGHT_R/24);            	
+ 				var x=Math.ceil(ALL_CHANNELS_LENGHT_R/4);	
+	 			var y=ALL_CHANNELS_LENGHT_R % 4;                 
+	 			
+ 				for (var a = 1; a <= l; a++){ 					
+ 					var owl_wrapper=document.getElementsByClassName('carousel-inner')[0];	
+ 					var list_wrapper=document.createElement('div');
+ 					if (a==1){
+ 						list_wrapper.className='item active'; 
+ 					}else{
+ 						list_wrapper.className='item'; 
+ 					} 					
+ 					var m=x-((a-1)*6);
+ 				
+	 				if (m<6)
+	 				{
+	 					var n=(a-1)*6+(x%(a*6));	 					
+	 				} else {
+	 					var n=a*6;	 					
+	 				}	 			
+					owl_wrapper.appendChild(list_wrapper);
+	 				for (var i = ((a-1)*6+1); i <= n; i++){	 					
+	 					var row_item=document.createElement('div');
+	 					row_item.className='row'; 					
+						list_wrapper.appendChild(row_item);
+						if ((i*4)<=ALL_CHANNELS_LENGHT_R){
+							var k=4;
+						} else{
+							k=y;
+						}
+						for (var j = 1; j <= k; j++){											
+							if (((i-1)*4)+(j-1)<=ALL_CHANNELS_LENGHT_R)
+							{
+								var channel_item=document.createElement('div'); 
+								channel_item.className="channel-item col-md-3 col-xs-3 .col-sm-3";					
+								row_item.appendChild(channel_item);
+
+								var channel_item_img_div=document.createElement('div');
+								channel_item_img_div.className="channel-item-img col-md-6 col-xs-12 .col-sm-6";
+								channel_item.appendChild(channel_item_img_div);
+
+								var channel_item_img=document.createElement('img');
+			 					channel_item_img.style.height="50px"; 
+			 					channel_item_img.style.width="110px"; 	
+			 					channel_item_img.style.margin="3px 0 0 0"; 			
+			 					channel_item_img.setAttribute('src', 'images/channels_logo/'+ALL_CHANNELSR[((i-1)*4)+(j-1)].img);
+			 					channel_item_img_div.appendChild(channel_item_img);	
+
+								var channel_item_name_div=document.createElement('div');
+								channel_item_name_div.className="channel-item-name col-md-6 col-xs-12 .col-sm-6";													
+								channel_item_name_div.innerHTML=ALL_CHANNELSR[((i-1)*4)+(j-1)].name; 
+								channel_item.appendChild(channel_item_name_div);
+							}else{
+								break;
+							}
+	 					}
+	 				}
+	 			}
+
+	 			if ($('.carousel-indicators').length){	 				
+	 				for (var i = 0; i < l_all; i++){					
+	 						if (i==0){	 							
+					 			var items = $('.carousel-indicators li');
+				            	var single = items.filter(':first');
+				            	single.addClass('active');
+	 						}
+	 						else{
+	 							var d=l-1;
+	 							if (i>d){	 								
+	 								$('.carousel-indicators li:eq('+i+')').css("opacity", "0" );
+	 							}else{	 								
+	 							}	 							
+	 						}		                  
+	                }  	 			
+	 			}else{	 				
+	 				var var1=document.getElementById('product-carousel');	
+	 				var ol=document.createElement('ol');
+		 			ol.className="carousel-indicators";
+		 			var1.appendChild(ol);
+	                for (var a = 1; a <= l; a++){
+	                    var li1=document.createElement('li');
+	                    if (a==1){
+	                        li1.className="active";      
+	                    }	                    
+	                    li1.setAttribute("data-target", "#product-carousel");
+	                    li1.setAttribute("data-slide-to", (a-1));
+	                    ol.appendChild(li1);
+	                }  
+	 			}	 			
+				
+		        $('.carousel').carousel({
+		                interval: false
+		        });		      
+            }
+
+            $('#g_all').click( function() { 
+               clear_channel();
+               remove_active_genre();
+               create_channel("all");               
+               $(this).toggleClass("active");
+			   return false;                		
+        	});
+        	$('#g_info').click( function() { 
+            	clear_channel();
+            	remove_active_genre();
+            	//alert($(this).attr('id'));
+            	create_channel("g_info");            	
+            	$(this).toggleClass("active");
+				return false;                		
+        	});
+        	$('#g_muz').click( function() { 
+            	clear_channel();
+            	remove_active_genre();
+            	create_channel("g_muz");            	
+            	$(this).toggleClass("active");
+				return false;                		
+        	});
+        	$('#g_razvl').click( function() { 
+                clear_channel();
+                create_channel("g_razvl");
+                remove_active_genre();
+                $(this).toggleClass("active");
+				return false;                		
+        	});
+        	$('#g_nauk').click( function() { 
+                clear_channel();
+                remove_active_genre();
+                create_channel("g_nauk");
+                $(this).toggleClass("active");
+				return false;                		
+        	});
+        	$('#g_bel').click( function() { 
+                clear_channel();
+                remove_active_genre();
+                create_channel("g_bel");
+                $(this).toggleClass("active");
+			    return false;                		
+        	});
+        	$('#g_deti').click( function() { 
+                clear_channel();
+                remove_active_genre();
+                create_channel("g_deti");
+                $(this).toggleClass("active");
+				return false;                		
+        	});
+            $('#g_kino').click( function() { 
+                clear_channel();
+                remove_active_genre();
+                create_channel("g_kino");
+                $(this).toggleClass("active");
+                return false;                        
+            });
+        	$('#g_sport').click( function() { 
+                clear_channel();
+                remove_active_genre();
+                create_channel("g_sport");
+                $(this).toggleClass("active");
+			    return false;                		
+        	});
+			/*
+        	$('#g_hd').click( function() { 
+                clear_channel();
+                remove_active_genre();
+                create_channel("g_hd");
+                $(this).toggleClass("active");
+			    return false;                		
+        	});
+*/
+        	/*$(".btn-from-js").mousover(function(){ 
+			    alert(1);
+			  	var col=$(this).css("color");
+			    $(this).css("background-color",col);
+			    $(this).css("color","black");
+			}).mouseout(function() { 
+			   alert(2);
+			  	var col=$(this).css("background-color");
+			    $(this).css("background-color","black");
+            	$(this).css("color", col);
+			});*/
+
+//***************** MODAL SEND MAIL
+			$('#Modal_Name').keyup(function(){
+				if ($('#Modal_Name').val()==""){
+					$('#Modal_Name').css("border","1px solid red");					
+				} else{
+					$('#Modal_Name').css("border","1px solid #20bcf1");						
+				}
+			});
+			$('#Modal_Name').focusout(function(){
+				if ($('#Modal_Name').val()==""){
+					$('#Modal_Name').css("border","1px solid red");					
+				} else{
+					$('#Modal_Name').css("border","0");					
+				}
+			});
+			$('#Modal_Name').click(function(){
+				if ($('#Modal_Name').val()==""){
+					$('#Modal_Name').css("border","1px solid red");					
+				} else{
+					$('#Modal_Name').css("border","1px solid #20bcf1");					
+				}
+			});
+
+			$('#Modal_tel').keyup(function(){
+				if ($('#Modal_tel').val()==""){
+					$('#Modal_tel').css("border","1px solid red");					
+				} else{
+					$('#Modal_tel').css("border","1px solid #20bcf1");				
+				}
+			});
+			$('#Modal_tel').focusout(function(){
+				if ($('#Modal_tel').val()==""){
+					$('#Modal_tel').css("border","1px solid red");					
+				} else{
+					$('#Modal_tel').css("border","0");					
+				}
+			});
+			$('#Modal_tel').click(function(){
+				if ($('#Modal_tel').val()==""){
+					$('#Modal_tel').css("border","1px solid red");					
+				} else{
+					$('#Modal_tel').css("border","1px solid #20bcf1");					
+				}
+			});
+			$('#Modal_type').click(function(){
+				if ($('#Modal_type').val()=="------------------------"){
+					$('#Modal_type').css("border","1px solid red");					
+				} else{
+					$('#Modal_type').css("border","");					
+				}
+			});
+			
+			$('#Modal_OK').click( function() { 
+				if ($('#Modal_Name').val()=="" || $('#Modal_tel').val()=="" || $('#Modal_type').val()=="------------------------"){
+					if ($('#Modal_Name').val()==""){
+						$('#Modal_Name').css("border","1px solid red");
+					} else{
+						$('#Modal_Name').css("border","0");
+					}
+					if ($('#Modal_tel').val()==""){
+						$('#Modal_tel').css("border","1px solid red");
+					} else{
+						$('#Modal_tel').css("border","0");
+					}
+					if ($('#Modal_type').val()=="------------------------"){
+						$('#Modal_type').css("border","1px solid red");
+					} else{
+						$('#Modal_type').css("border","0");
+					}	
+					$('.modal_error_text_ok').html('Заполните форму правильно');
+					$('.my-modal-window').css("height","385px");					
+					return false; 					
+				}else{
+					$('.modal_error_text_ok').html('');
+					$('fieldset').css("display","none");					
+					var form_hor1=document.getElementsByClassName('form-horizontal')[0];
+					var send_ok1=document.createElement('div'); 
+					send_ok1.className="col-md-12 modal_header_text";
+					send_ok1.innerHTML="Спасибо. Ваша заявка принята.<br/>Специалист свяжется с Вами в<br/>течении рабочего дня.";
+					send_ok1.style.margin="90px 0 0 0";
+					form_hor1.appendChild(send_ok1);	
+					return true;
+				}
+        	});
+//***************** END! MODAL SEND MAIL		
+			function HideLikeModalWindow(){
+				$('#Modal_Like').modal('hide');
+			}
+			$('body').on('click', '#Login_REG_like', function() { 	
+				HideLikeModalWindow();
+			});
+
+			window.onload = function(){				
+				changeLogInOut();  
+
+
+/* !!!!!!!!!!!!!!! Прячем высплывающее окно с сообщением до конца 1 марта............... !!!!!!!!!!!!!!!!!!!!!!!*/
+		/*		 $('#myModal_message').modal();*/
+/**/
+        	}     		
+
+        	$(document).ready(function() {
+        		
+        		if (window.location.href=="http://main.itv.by/payments.html#channel"){  					
+        			$('#link2').click();
+        		}
+        		if (window.location.href=="http://main.itv.by/payments.html#tv_prist"){  					
+        			$('#link3').click();
+        		}
+        		
+        	});	
+			/*$(document).ready(function() {  
+	        	$(".btn-from-js").hover(
+	        		function () {
+	        			alert(1);
+	            		var col=$(this).css("color");
+	            		$(this).css("background-color",col);
+	            		$(this).css("color","black");
+	        		},
+	        		function() {
+	        			alert(2);
+	        			var col=$(this).css("backgroundcolor");
+	            		$(this).css("background-color","black");
+	            		$(this).css("color", col);
+	        		}
+	       		);
+	       	});	*/
+		</script>
+	</body>
+</html>
